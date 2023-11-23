@@ -1,0 +1,63 @@
+.title{
+    color: white; 
+    background-color: black; 
+    font-size:30px; 
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+html {
+    font-size: 100%;
+    font-family: 'Hiragino Sans', sans-serif;
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+
+
+body {
+    margin: 0;
+    background-color: #f6faff;
+    color: #6c7686;
+  }
+  .table-body {
+    background-color: #ffffff;
+  }
+  
+  .table-body li {
+   
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .name{
+    width: 200px; 
+  }
+  
+  .name, .delete-button, .edit-button{
+    float: left;
+    display: flex;
+  }
+
+  
+
+  .item-data {
+    display: flex;
+  }
+  
+  .item-menu {
+    display: flex;
+  }
+
+  .items{
+    display: flex;
+    color: red;
+
+    align-items: center;
+  }
+  .item1,.item2,.item3{
+    padding-right: 100px;
+  }

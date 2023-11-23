@@ -1,0 +1,28 @@
+h3{
+    text-align: center;
+    color: white; 
+    background-color:black; 
+    padding: 10px 30px;
+    font-family: "Arial", "メイリオ";
+}
+header{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+img{
+    display: block;
+    height:300px;
+    width: 300px;
+    margin:0 auto;
+
+    
+}
+a{
+    display: block;
+    width: 300px;
+    padding: 15px 0;
+    margin: auto;
+    background: black;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+}
