@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LIST APP</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/send_url.js"></script>
+  </head>
+
+  <body>
+    <form action = "/calculate" method = "post">
+
+        <select name="pay_id">
+            <% items.forEach((item) => { %>
+                <option value = "<%= item.id%>" > <%= item.name%> </option>
+            <% }); %>
+        </select>
+
+        <span>が</span>
+
+        <div>
+            <% items.forEach((item) => { %>
+                <label><input type="checkbox" name="paid_ids" value = "<%= item.id%>" checked = "checked" ><%= item.name%></label>
+            <% }); %>
+        </div>
+
+        
+        <span>の</span>
+  
+
+        <input type="text" name = "content">
+
+        <span>代を</span>
+
+        <input type="text" name = "pay">
+
+        <span>円払った</span>
+
+        <input type = "submit" value = "決定">
+
+    </form>
+
+    <form action="/end" method = "get">
+        <input type = "submit" value = "決算">
+
+    </form>
+
+
+
+    <form action="/reset" method = "post">
+        <input type = "submit" value = "リセット">
+
+    </form>
+
+    <a href="/index">戻る</a>
+
+
+
+
+   
+        
+   
+  </body>
+</html>

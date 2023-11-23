@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LIST APP</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/send_url.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h3 class = "title">会計アプリ</h3>
+    </header>
+ 
+    <div class="container">
+      <div class="container-header">
+        <a href = "/">初期画面へ</a>
+      </div>
+      <div class="index-table-wrapper">
+        <p>グループ名</p>
+
+        <form action = "/decide" method = "post">
+          <input type = "text" name = "placeName"> 
+          <input type = "submit" value = "決定" class = "finish-buttom">
+        </form>
+          
+
+       
+
+          
+          <!-- 配列itemsを定義してください -->
+          <p>メンバーの追加</p>
+          <form action="/create" method = "post" class = "add-menber">
+            
+            <input type = "text" name = "itemName" class = "menber-name">
+            <input type = "submit" value = "作成" class = "submit-button">
+          </form>
+
+        
+        
+          <ul class="table-body">
+            <!-- 以下の3つの<li>要素を削除してください -->
+            <% items.forEach((item) => { %>
+            
+              <li class = "item-list">
+                <div class = "name"> <%= item.name%> </div>
+                <form action="/delete/<%= item.id%>" method="post" >
+                  <input type="submit" value="削除" class = "delete-button">
+                </form>
+                <a href = "/edit/<%= item.id%>" class = "edit-button">編集</a>
+              </li>
+            <% }); %>
+          </ul>
+        
+
+      
+
+        
+      </div>
+    </div>
+  </body>
+</html>

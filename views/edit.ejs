@@ -1,0 +1,6 @@
+<h1>編集画面</h1>
+<a href = "/">トップに戻る</a>
+<form action = "/update/<%= item.id%>" method = "post">
+    <input type = "text" name = "itemName" value = "<%= item.name%>"> 
+    <input type = "submit" value = "変更">
+</form>
