@@ -1,0 +1,33 @@
+h3{
+    text-align: center;
+    color: white; 
+    background-color:black; 
+    padding: 10px 30px;
+    font-family: "Arial", "メイリオ";
+}
+
+p{
+    text-align: center;
+}
+
+.add-menber{
+    float: left;
+    width: 100%;
+}
+
+.menber-name{
+    width: 87%;
+    height: 40px;
+}
+
+.submit-button{
+    width: 10%;
+    height: 40px;
+}
+
+.finish-buttom{
+    position: absolute;
+    top: 1000px;
+    left: 500px;
+
+}
